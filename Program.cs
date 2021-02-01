@@ -11,7 +11,14 @@ namespace GradeBook
             //Console.WriteLine("Hello" + args[0] + "!");
 
             //string interpolation:
-            Console.WriteLine($"Hello, {args[0]}!");
+            if (args.Length > 0)
+            {
+                Console.WriteLine($"Hello, {args[0]}!");
+            }
+            else 
+            {
+                Console.WriteLine("Hello dude");
+            }
 
         }
     }
