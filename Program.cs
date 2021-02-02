@@ -8,12 +8,21 @@ namespace GradeBook
         static void Main(string[] args)
         {
 
-            var x = 34.1;
-            var y = 77.9;
+            //double[] numbers;  // just declaring
+            // double[] numbers = new double[3];  // provide explicit size of array
+            var numbers = new double[3];  // with implicit typing
+            // double x;
+            // x = x + 3.1; // this and above line with cause an error
 
-            var result = x + y;
+            numbers[0] = 12.7; // unassigned local variable
+            numbers[1] = 22.9;
+            numbers[2] = 33.5;
 
-            Console.WriteLine(result);
+            var result = numbers[0] + numbers[1] + numbers[2];
+            System.Console.WriteLine(result);
+
+            
+
        
             if (args.Length > 0)
             {
