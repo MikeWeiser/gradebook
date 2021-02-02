@@ -8,10 +8,10 @@ namespace GradeBook
         static void Main(string[] args)
         {
 
-            double x = 34.1;
-            double y = 77.9;
+            var x = 34.1;
+            var y = 77.9;
 
-            double result = x + y;
+            var result = x + y;
 
             Console.WriteLine(result);
        
