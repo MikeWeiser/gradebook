@@ -12,7 +12,7 @@ namespace GradeBook
 
             var result = 0.0;
             
-            foreach(var number in numbers) 
+            foreach(var number in numbers) // 'number' variable has to be typed correctly
             {
                 result += number;
             }
