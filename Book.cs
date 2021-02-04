@@ -5,14 +5,14 @@ namespace GradeBook
     public class Book
     {
 
-        // explicit typing to create a 'field' in this class
-        // List<double> grades = new List<double>();
+        private List<double> grades;  // no modifier is 'private'
+        private string name;
 
-        // another way with to intialize grades List with constructor method
-        List<double> grades;
-        public Book()
+        public Book(string name)  // 'public' is an access modifier
         {
-            grades = new List<double>();      
+            grades = new List<double>();
+            this.name = name;  // 'this' is an implicit variable to refer to object currently being operated on
+                  
         }
 
 
